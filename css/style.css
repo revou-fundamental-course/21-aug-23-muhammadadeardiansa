@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -50,19 +51,27 @@ header{
     align-items: center;
 }
 
-.padding{
+
+.padding-nav{
     padding: 15px 20px;
     background-color: #020617;
 }
 
+.padding-1{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #020617;
+}
+
 .padding-2{
-    padding: 15px 20px;
+    padding-top: 90px;
+    padding-bottom: 90px;
     background-color: #111827;
 }
 
-.flex-space-around{
+.flex-space-evenly{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -88,29 +97,40 @@ nav a:hover{
 .person p{
     color: #EAB308;
     font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .person h1{
     color: white;
     font-size: 42px;
     font-weight: bold;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    /* margin-top: 25px;
+    margin-bottom: 25px; */
 }
 
 .deskripsi{
     color: #6B7280;
     font-size: 16px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    width: 450px ;
+    line-height: 25px;
 }
 
 
 .button {
     text-decoration: none;
-    color: white;
+    color: black;
     background-color: #EAB308;
+    border: 1px solid #EAB308;
     padding: 15px 40px;
     border-radius: 10px;
+}
+
+.button:hover{
+    background-color: transparent;
+    border: 2px solid #EAB308;
+    color: white;
 }
 
 .img-profile img{
@@ -118,3 +138,11 @@ nav a:hover{
     width: 300px;
     border-radius: 50%;
 }
+
+.img-about img{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+} 
+
+
