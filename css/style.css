@@ -145,4 +145,55 @@ nav a:hover{
     border-radius: 20px;
 } 
 
+.my-skill{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
 
+.my-skill h1{   
+    text-align: center;
+}
+
+hr{
+    border: 1px solid #EAB308;
+    width: 100px;    
+    margin-top: 10px;
+}
+
+.card-skill{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    column-gap: 10px;
+    row-gap: 20px;
+    justify-content: space-evenly;
+}
+
+.skill{
+    display: grid;
+    justify-items: center;
+}
+
+.skill h1{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+}
+
+.skill img{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.skill p{
+    color: #6B7280;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    line-height: 15px;
+    text-align: center;
+}
