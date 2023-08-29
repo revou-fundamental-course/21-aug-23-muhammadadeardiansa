@@ -69,10 +69,25 @@ header{
     background-color: #111827;
 }
 
+.padding-footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #111827;
+}
+
 .flex-space-evenly{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.top{
+    display: flex;
+    align-items: start;
+}
+
+#home{
+    margin-top: 80px;
 }
 
 nav a{
@@ -197,3 +212,193 @@ hr{
     line-height: 15px;
     text-align: center;
 }
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Nilai ini dapat disesuaikan sesuai kebutuhan */
+    background-color: #020617;
+    /* Tambahkan padding, margin, atau properti lain sesuai desain Anda */
+}
+
+.message-quote{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 800px;
+}
+
+.message-quote h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.message-quote p{
+    color: #6B7280;
+    font-size: 12px;
+    margin-bottom: 30px;
+    margin-top: 5px;
+    line-height: 15px;
+    text-align: center;
+}
+
+.form-container {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* max-width: 400px;
+    width: 100%; */
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.radio-label {
+    margin-right: 10px;
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.submit-button {
+    background-color: #EAB308;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.padding-footer {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+  }
+
+.padding-footer li {
+    display: flex;
+    justify-items: center;
+}
+
+.padding-footer a {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+  
+.padding-footer a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}
+  
+.padding-footer li:last-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+  
+.padding-footer li:hover ~ li p {
+    animation: wave-animation 0.3s infinite;
+}
+
+@keyframes wave-animation {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    75% {
+      transform: rotate(-15deg);
+    }
+  }
+
+@media only screen and (max-width : 600px) {
+    body{
+        width: 100%;
+        width: 100%;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #home{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        margin-top: 150px;
+    }
+
+    #home .person{
+        margin-top: 100px;
+    }
+    #about{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .img-about{
+        margin-top: 60px;
+    }
+    .card-skill{
+        display: grid;
+        grid-template-columns: 300px ;
+        column-gap: 10px;
+        row-gap: 20px;
+        justify-content: center;
+    }
+    .message-quote{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 400px;
+    }
+    .top{
+        display: grid;
+    }
+    form{
+        margin-bottom: 25px;
+    }
+    .padding-footer li {
+        grid-auto-flow: column;
+    }
+}
+
