@@ -26,7 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 ol, ul {
 	list-style: none;
@@ -374,7 +374,7 @@ hr{
   }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
     
     .menu-toggle {
         display: block; 
@@ -449,6 +449,73 @@ hr{
         grid-auto-flow: column;
     }
 
+    img{
+        max-width: 100%;
+    }
+
+    html{
+        width: 100%;
+    }
+    
+    .padding-footer li {
+        grid-auto-flow: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 800px){
+    #home {
+        flex-direction: column-reverse;
+        align-items: center; 
+        margin-top: 80px; 
+    }
+
+    #home .person{
+        margin-top: 100px;
+    }
+    
+    .img-profile {
+        margin-top: 20px; 
+    }
+
+    
+    #about {
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+
+    .img-about{
+        margin-top: 60px;
+    }
+    
+    .card-skill {
+        grid-template-columns: 300px; 
+        justify-content: center;
+    }
+
+    
+    .message-quote{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 400px;
+    }
+    .top{
+        display: grid;
+    }
+    form{
+        margin-bottom: 25px;
+    }
+    .padding-footer li {
+        grid-auto-flow: column;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    html{
+        max-width: 100%;
+    }
     
     .padding-footer li {
         grid-auto-flow: row;
