@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Muhammad Ade</h1>
-<h3 align="center">Hallo Everywhere ....</h3>
+<h3 align="center">Hallo Everyone ....</h3>
 
 - 🔭 Ini Mini Project RevoU ya Gaes... [Portfolio Website](https://revou-fundamental-course.github.io/21-aug-23-muhammadadeardiansa/)
 
