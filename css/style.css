@@ -39,6 +39,12 @@ q:before, q:after {
 	content: '';
 	content: none;
 }
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding: 6rem;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -93,7 +99,7 @@ header{
 nav a{
     color: white;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 10px 18px; 
     font-size: 10px;    
     margin-left: 5px;
     text-transform: uppercase;
@@ -102,6 +108,18 @@ nav a{
 nav a:hover{
     background-color: #979da833;
     border-bottom: 1px solid white ;
+}
+
+.menu-toggle {
+    display: none; /* Hide by default */
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
 }
 
 .logo img{
@@ -247,8 +265,6 @@ hr{
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    /* max-width: 400px;
-    width: 100%; */
 }
 
 .form-container h1 {
@@ -258,6 +274,16 @@ hr{
 
 .form-group {
     margin-bottom: 15px;
+    color: white;
+}
+
+.form-group p {
+    display: block ;
+    color: red;
+    margin: 5px 0px;
+}
+
+#output p{
     color: white;
 }
 
@@ -347,45 +373,67 @@ hr{
     }
   }
 
-@media only screen and (max-width : 600px) {
-    body{
-        width: 100%;
-        width: 100%;
+
+@media only screen and (max-width: 600px) {
+    
+    .menu-toggle {
+        display: block; 
+        position: absolute;
+        right: 20px;
     }
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-    nav{
-        display: flex;
-        flex-direction: column;
+
+    nav {
+        display: none; 
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        background-color: #020617;
+        width: 100%;
         text-align: center;
     }
-    #home{
-        display: flex;
-        flex-wrap: wrap;
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px 0;
+        color: white;
+        text-decoration: none;
+    }
+
+    
+    #home {
         flex-direction: column-reverse;
-        margin-top: 150px;
+        align-items: center; 
+        margin-top: 80px; 
     }
 
     #home .person{
         margin-top: 100px;
     }
-    #about{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
+    
+    .img-profile {
+        margin-top: 20px; 
     }
+
+    
+    #about {
+        flex-direction: column-reverse;
+        align-items: center; 
+    }
+
     .img-about{
         margin-top: 60px;
     }
-    .card-skill{
-        display: grid;
-        grid-template-columns: 300px ;
-        column-gap: 10px;
-        row-gap: 20px;
+    
+    .card-skill {
+        grid-template-columns: 300px; 
         justify-content: center;
     }
+
+    
     .message-quote{
         display: grid;
         justify-content: center;
@@ -399,6 +447,12 @@ hr{
     }
     .padding-footer li {
         grid-auto-flow: column;
+    }
+
+    
+    .padding-footer li {
+        grid-auto-flow: row;
+        justify-content: center;
     }
 }
 
